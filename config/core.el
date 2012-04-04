@@ -1,7 +1,7 @@
 ;;; core config
 
-(setq user-full-name "Prajwalit Bhopale")
-(setq user-mail-address "prajwalit@gmail.com")
+(setq user-full-name "Aamir Kapasi")
+(setq user-mail-address "aamirkapasi89@gmail.com")
 
 (set-default-font "DejaVu Sans Mono-10")
 
@@ -15,7 +15,7 @@
 (require 'rainbow-parens)
 (require 'rainbow-delimiters)
 (require 'multi-term)
-(setq multi-term-program "/bin/zsh")
+(setq multi-term-program "/bin/bash")
 
 (add-lib-path "scratch-el")
 (require 'scratch)
