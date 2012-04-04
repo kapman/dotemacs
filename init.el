@@ -54,3 +54,4 @@
 (load-config "js-mode")
 (load-config "magit")
 (load-config "css-mode")
+(load-config "idle-highlight-mode")
