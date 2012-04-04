@@ -42,3 +42,9 @@
 (custom-set-variables
  '(term-default-bg-color "#000000")      ;; background color (black)
  '(term-default-fg-color "#dddd00"))     ;; foreground color (yellow)
+
+(when window-system
+  (setq frame-title-format '(buffer-file-name "%f" ("%b")))
+  (tooltip-mode -1)
+  (mouse-wheel-mode t)
+  (blink-cursor-mode -1))
