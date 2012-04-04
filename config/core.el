@@ -36,3 +36,7 @@
                             (height . 50)))
 (setq frame-title-format "%b")
 (setq icon-title-format  "%b")
+
+;;; Pinging fix
+(setq ffap-machine-p-known 'accept)
+(setq ffap-url-regexp nil)
