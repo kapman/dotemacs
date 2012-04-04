@@ -53,3 +53,4 @@
 (load-config "js2-mode")
 (load-config "js-mode")
 (load-config "magit")
+(load-config "css-mode")
