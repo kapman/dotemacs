@@ -3,8 +3,9 @@
 ;; color-theme
 (add-lib-path "color-theme")
 (require 'color-theme)
-(load-file (concat dotfiles-lib-dir "zenburn.el"))
-(color-theme-zenburn)
+(load-file (concat dotfiles-lib-dir "tangotango.el"))
+(require 'color-theme-tangotango)
+(color-theme-tangotango)
 
 ;; set cursor colour
 (set-cursor-color "yellow")

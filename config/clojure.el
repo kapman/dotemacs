@@ -32,10 +32,10 @@
 (defmacro defclojureface (name color desc &optional others)
   `(defface ,name '((((class color)) (:foreground ,color ,@others))) ,desc :group 'faces))
 
-(defclojureface clojure-keyword      "khaki"     "Clojure keywords")
+(defclojureface clojure-keyword      "#729fcf"     "Clojure keywords")
 (defclojureface clojure-java-call    "#4bcf68"   "Clojure Java calls")
 (defclojureface clojure-special      "#b8bb00"   "Clojure special")
-(defclojureface clojure-double-quote "#b8bb00"   "Clojure special" (:background "unspecified"))
+;; (defclojureface clojure-double-quote "#b8bb00"   "Clojure special" (:background "unspecified"))
 
 (defun tweak-clojure-syntax ()
   (mapcar (lambda (x) (font-lock-add-keywords nil x))
