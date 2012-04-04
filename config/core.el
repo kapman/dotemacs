@@ -12,8 +12,8 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (require 'smooth-scrolling)
-(require 'rainbow-parens)
-(require 'rainbow-delimiters)
+;; (require 'rainbow-parens)
+;; (require 'rainbow-delimiters)
 (require 'multi-term)
 (setq multi-term-program "/bin/bash")
 
