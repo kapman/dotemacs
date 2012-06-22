@@ -29,3 +29,6 @@
 
 (eval-after-load "magit"
   (progn '(global-set-key (kbd "C-x g") 'magit-status)))
+
+;; Ibuffer
+(global-set-key (kbd "C-x C-b") 'ibuffer)
