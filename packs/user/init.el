@@ -1,2 +1,2 @@
-(setq user-full-name "Prajwalit Bhopale")
-(setq user-mail-address "prajwalit@helpshift.com")
+(setq user-full-name "Aamir Kapasi")
+(setq user-mail-address "aamirkapasi89@gmail.com")
