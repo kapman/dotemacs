@@ -4,6 +4,9 @@
 ;; Use M-return to switch between windowed and full-screen modes
 (global-set-key (kbd "M-RET") 'ns-toggle-fullscreen)
 
+;; Pop to last mark
+(global-set-key (kbd "M-j") 'pop-to-mark-command)
+
 (global-set-key (kbd "C-c r") 'revert-buffer)
 
 (windmove-default-keybindings) ;; Shift+direction
