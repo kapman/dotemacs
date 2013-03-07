@@ -86,8 +86,6 @@
 ;;; Jump to a specific line of the current buffer
 (global-set-key (kbd "M-g") 'goto-line)
 
-(add-hook 'text-mode-hook 'turn-on-auto-fill)
-
 (setq ffap-machine-p-known 'accept)
 (setq ffap-url-regexp nil)
 
