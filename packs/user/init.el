@@ -13,3 +13,14 @@
 (windmove-default-keybindings) ;; Shift+direction
 (global-set-key (kbd "C-x O") (lambda () (interactive) (other-window -1))) ;; back one
 (global-set-key (kbd "C-x C-o") (lambda () (interactive) (other-window 2))) ;; forward two
+
+(defmacro align-on (str)
+  `(lambda (b e)
+     (interactive "r")
+     (align-regexp b e (concat "\\(\\s-*\\)" ,str) 1 1)))
+
+;; align on =
+(global-set-key (kbd "C-M-=") (align-on "="))
+
+;; align on :
+(global-set-key (kbd "C-M-;") (align-on ":"))
