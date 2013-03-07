@@ -24,3 +24,15 @@
 
 ;; align on :
 (global-set-key (kbd "C-M-;") (align-on ":"))
+
+(defun refer-window ()
+  "Clears other windows, split current window horizontally
+ and set focus in the new frame"
+  (interactive)
+  (let ((num (window-number)))
+    (delete-other-windows)
+    (split-window-horizontally)
+    (when (equal num (window-number))
+      (other-window 1))))
+
+(global-set-key (kbd "C-x C-1") 'refer-window)
