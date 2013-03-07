@@ -31,3 +31,6 @@
 
 (global-unset-key (kbd "s-p")) ;; stupid binding
 (global-unset-key (kbd "M-TAB"))
+
+;; Fix mac's meta
+(setq mac-command-modifier 'meta)
