@@ -118,7 +118,15 @@
 ;;;
 
 ;;default live packs
-(setq live-packs '("core" "themes" "power" "clojure" "programming" "notes"))
+(setq live-packs '("core" "user" "themes" "power" "clojure" "programming" "notes"))
 
 ;; Load all packs - Power Extreme!
 (live-load-all-packs live-packs)
+
+(require 'package)
+(add-to-list 'package-archives
+             '("marmalade" .
+               "http://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(package-initialize)
