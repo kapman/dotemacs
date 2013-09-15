@@ -14,37 +14,37 @@
 ;; Hide empty buffer groups
 (setq ibuffer-show-empty-filter-groups nil)
 
-;; ;; Switch to specified buffer groups
-;; (add-hook 'ibuffer-mode-hook
-;;           (lambda ()
-;;             (ibuffer-switch-to-saved-filter-groups "default")))
+;; Switch to specified buffer groups
+(add-hook 'ibuffer-mode-hook
+          (lambda ()
+            (ibuffer-switch-to-saved-filter-groups "default")))
 
 ;; My own config for ibuffer.
-;; (setq ibuffer-saved-filter-groups
-;;       (quote (("default"
-;;                ("Zulu"
-;;                 (filename . "zulu"))
-;;                ("Moby"
-;;                 (filename . "moby"))
-;;                ("Programming"
-;;                 (or
-;;                  (mode . c-mode)
-;;                  (mode . c++-mode)
-;;                  (mode . erlang-mode)
-;;                  (mode . perl-mode)
-;;                  (mode . python-mode)
-;;                  (mode . clojure-mode)
-;;                  (mode . makefile-gmake-mode)
-;;                  (mode . js-mode)))
-;;                ("Org"
-;;                 (or
-;;                  (mode . org-mode)
-;;                  (mode . markdown-mode)))
-;;                ("Emacs"
-;;                 (mode . emacs-lisp-mode))
-;;                ("Magit"
-;;                 (mode . magit-mode))
-;;                ("Documents"
-;;                 (or
-;;                  (mode . LaTeX-mode)
-;;                  (mode . fundamental-mode)))))))
+(setq ibuffer-saved-filter-groups
+      (quote (("default"
+               ("Zulu"
+                (filename . "zulu"))
+               ("Moby"
+                (filename . "moby"))
+               ("Programming"
+                (or
+                 (mode . c-mode)
+                 (mode . c++-mode)
+                 (mode . erlang-mode)
+                 (mode . perl-mode)
+                 (mode . python-mode)
+                 (mode . clojure-mode)
+                 (mode . makefile-gmake-mode)
+                 (mode . js-mode)))
+               ("Org"
+                (or
+                 (mode . org-mode)
+                 (mode . markdown-mode)))
+               ("Emacs"
+                (mode . emacs-lisp-mode))
+               ("Magit"
+                (mode . magit-mode))
+               ("Documents"
+                (or
+                 (mode . LaTeX-mode)
+                 (mode . fundamental-mode)))))))
