@@ -9,4 +9,3 @@
 (live-load-config-file "golang-conf.el")
 (live-load-config-file "js-conf.el")
 (live-load-config-file "zencoding-conf.el")
-(live-load-config-file "tagedit-conf.el")
