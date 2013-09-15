@@ -1,0 +1,3 @@
+[submodule "packs/clojure/lib/nrepl"]
+	path = packs/clojure/lib/nrepl
+	url = https://github.com/clojure-emacs/nrepl.el.git
