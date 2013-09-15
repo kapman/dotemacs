@@ -39,3 +39,5 @@
       (other-window 1))))
 
 (global-set-key (kbd "C-x C-1") 'refer-window)
+
+(global-set-key (kbd "C-S-k") 'kill-whole-line)
