@@ -81,6 +81,7 @@
 (require 'nrepl)
 (add-hook 'nrepl-interaction-mode-hook
           'nrepl-turn-on-eldoc-mode)
+(setq nrepl-history-file "~/.emacs.d/nrepl-history")
 
 (setq nrepl-hide-special-buffers t)
 (setq nrepl-tab-command 'indent-for-tab-command)
