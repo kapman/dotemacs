@@ -136,10 +136,10 @@
               show-trailing-whitespace t)
 
 ;; real Emacs hackers don't use the arrow keys
-(global-unset-key [up])
-(global-unset-key [down])
-(global-unset-key [left])
-(global-unset-key [right])
+;; (global-unset-key [up])
+;; (global-unset-key [down])
+;; (global-unset-key [left])
+;; (global-unset-key [right])
 
 ;; use M-f and M-b instead
 (global-unset-key [M-left])
